@@ -1,7 +1,7 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-Encyclopedia
+New page
 {% endblock %}
 
 {% block body %}
@@ -10,9 +10,11 @@ Encyclopedia
     {% csrf_token %}
     <label for="page_title">Title: </label>
     <input type="text" id="page_title" name="title" placeholder="Enter a title"><br>
+
     <label for="markdown_content">Markdown Content:</label><br>
     <textarea name="content" id="markdown_content"></textarea><br>
-    <input type="submit" value="New Page" class="btn btn-primary">
+
+    <input type="submit" value="Create" class="btn btn-primary">
 </form>
 
 {% endblock %}
